@@ -1,6 +1,1 @@
-编写model_derivative_api.ts以进行测试，目标：
-    1）获取Access Token
-    2）获取Signed URL
-    3）上传cad_file/test.zip
-    4）调用转换命令api
-    5）在前端填入对应的urn，可以显示出画面
+暂无，可能再去看一下viewer的文档

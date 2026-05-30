@@ -1,12 +1,22 @@
-import express from 'express'
+// import express from 'express'
 
-const app = express()
-const port = 3000
+// API routers
+import test from './api/model_derivative_api.ts'
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-});
+// 加载.env
+process.loadEnvFile()
 
-app.listen(port, () => {
-    console.log(`Example app listening on port http://localhost:${port}`)
-});
+// const app = express()
+// const port = 3000
+
+// app.use('/model-derivative', modelDerivativeRouter)
+const _test = new test()
+_test.start('./cad_file/test.zip')
+
+// app.get('/', (req, res) => {
+//     res.send('Hello World!')
+// });
+
+// app.listen(port, () => {
+//     console.log(`Example app listening on port http://localhost:${port}`)
+// });
